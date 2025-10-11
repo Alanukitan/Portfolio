@@ -11,25 +11,53 @@
 </head>
 <body>
     <!--Header-->
-    <header >
+    <header id="Home" >
         <div class=" bg-center " style="background-image: url(./images/Property\ 1=MacBook\ Air\ -\ 75\,\ Property\ 2=default.png)  ; ">
+       <nav class=" text-white p-4 flex justify-between items-center">
+        <div class="text-lg font-bold font-sans text-orange-500"></div>
+        <button class="flex justify-center w-16 h-16 hover:bg-transparent rounded-lg md:hidden " id="menu-button">
+            <img class="h-10 w-10" src="./images/navigation-bar.png" alt="" id="menu-icon">
+            <img class="h-10 w- 10 hidden hover:bg-white" src="./images/close.png " alt="" id="close-icon">
 
-<nav class=" hidden ml-38  mx-auto border-gray-200 dark:bg-gray-900 md:hidden lg:flex p-4 pl-56">
+        </button>
+        <ul class="hidden md:hidden md:flex md:items-center md:space-x-4 absolute md:relative bg-transparent md:bg-transparent w-full md:w-auto top-6 md:top-auto right-0 p-4 md:p-0" id="menu">
+            <li> <a href="#Home" class="block md:inline text-xl hover:text-orange-500 py-2 md:py-0 ">Home</a></li>
+            <li> <a href="#Services" class="block md:inline hover:text-orange-500 py-2 md:py-0">Services</a></li>
+            <li> <a href="#Experience" class="block md:inline hover:text-orange-500 py-2 md:py-0">Experience</a></li>
+            <li> <a href="#Resume" class="block md:inline hover:text-orange-500 py-2 md:py-0">Resume</a></li>
+            <li> <a href="#Projects" class="block md:inline hover:text-orange-500 py-2 md:py-0 focus:outline-none focus:ring focus:ring-orange-400 active:bg-blue-700 active:text-white">Projects</a></li>
+        </ul>
+        
+
+<div class="  hidden ml-38  mx-auto border-gray-200 dark:bg-gray-900 md:hidden lg:flex p-4 pl-56">
 
         <ul class="  flex  px-8 space-x-5 border border-gray-500 rounded-full md:flex-row lg:space-x-9 ">
-            <li class="text-lg text-gray-500 hover:text-gray-300 "> <a href="#"> Home</a></li>
-            <li class="text-lg text-gray-500"><a href="#">Services</a></li>
-            <li class="text-lg text-gray-500"><a href="#">Experience</a></li>
-            <li class="text-lg text-gray-500"><a href="#">Resume</a></li>
-            <li class="text-lg text-gray-500"><a href="#">Projects</a></li>
+            <li class="text-lg text-gray-500 hover:text-gray-300 "> <a href="#Home"> Home</a></li>
+            <li class="text-lg text-gray-500 hover:text-gray-300"><a href="#Services">Services</a></li>
+            <li class="text-lg text-gray-500 hover:text-gray-300"><a href="#Experience">Experience</a></li>
+            <li class="text-lg text-gray-500 hover:text-gray-300"><a href="#Resume">Resume</a></li>
+            <li class="text-lg text-gray-500 hover:text-gray-300"><a href="#Projects">Projects</a></li>
         </ul>
         <div class="bg-transparent text-lg text-amber-700 font-mono font-medium border border-gray-500 rounded-full ml-10 px-5 ">Contact</div>
+</div>
 
 </nav>
-<div class="flex flex-col-reverse p-6 sm:pl-5 md:flex-row    lg: ml-auto">
-    <div class=" leading-6 md:m-12 leading-10"> <h3 class="text-gray-500 text-lg">Hello, I am <span class="text-orange-400 font-sans text-xl font-mono">GALLANT</span></h3>
-    <h1 class="text-gray-400   text-4xl relative">FRONT-END<span class="text-orange-400"> DEVELOPER</span></h1>
-    <p class=" leading-4   text-gray-500 animate-spin ">A Front End Developer building clean, user-centered inerfaces and smooth, engaging product experiences.</p>
+
+<div class=" flex flex-col-reverse p-6  sm:pl-5 md:flex-row    lg: ml-auto mt-0" id="image" >
+    <div class=" opacity-0 translate-y-2 transition duration-500 ease-out animate-me leading-6 mt-6 md:m-4 md:leading-10 lg:ml-11 "> <h3 class="text-gray-500 text-lg mb-3">Hello, I am <span class="text-orange-400 font-sans text-xl font-mono">GALLANT</span></h3>
+    <h1 class="text-gray-400   text-4xl relative animate-bounce">FRONT-END
+
+        <span class="relative bg-orange-300 bg-opacity-25 text-orange-700 font-semibold ">
+            <span>
+               <span class="hidden md:absolute top-0  w-4 h-4 border-t-2 border-l-2 border-orange-400 "></span>
+                  <span class="hidden md:absolute top-0 right-0 w-4 h-4 border-t-2 border-r-2 border-orange-400"></span>
+                  <span class="hidden md:absolute bottom-0 left-0   w-4 h-4 border-b-2 border-l-2 border-orange-400"></span>
+                  <span class="hidden md:absolute bottom-0 right-0 w-4 h-4 border-b-2 border-r-2 border-orange-400 "></span> </span>
+             DEVELOPER</span>
+                
+          
+            </h1>
+    <p class=" leading-4   text-gray-500  ">A Front End Developer building clean, user-centered inerfaces and smooth, engaging product experiences.</p>
      
     <div class="flex w-auto space-x-3 mt-6 pb-4">
         <button class=" text-lg rounded-3xl px-5  text-white bg-orange-800  hover:bg-transparent border border-orange-500  cursor-pointer transition duration-500 ease-out ">Hire Me <i class="fa fa-envelope fill-slate-300"></i></button>
@@ -38,16 +66,16 @@
     </div>
     </div>
 <div class="">
-    <img  class=" mx-8 max-w-full h-auto md:w-96 mt-10 px-3 lg:w-80   " src="./images/Frame 1707479399.png">
+    <img  class="opacity-0 translate-y-2 transition duration-800 ease-out animate-me max-w-full h-auto md:w-96  px-3 lg:w-96 mb-11"  src="./images/Frame 1707479399.png" >
 </div>
 </div>
     </header>
 <!--About ME-->
 
-    <section class=" p-5 bg-cover lg:flex flex-row" style="background-image: url(./images//Property\ 1=MacBook\ Air\ -\ 75\,\ Property\ 2=default.png);">
+    <section class="  p-5 bg-cover lg:flex flex-row" style="background-image: url(./images//Property\ 1=MacBook\ Air\ -\ 75\,\ Property\ 2=default.png);">
         
-        <div > <img class=" px-5 md:w-auto " src="./images/Group 639(1).png"> </div>
-        <div class=" m-2 md:px-14 lg:mt-28" >
+        <div class="opacity-0 translate-y-2 transition duration-700 ease-out animate-me" > <img class=" px-5 md:w-auto " src="./images/Group 639(1).png"> </div>
+        <div class="opacity-0 translate-y-2 transition duration-700 ease-out animate-me m-2 md:px-14 lg:mt-28" >
             <h2 class="text-white text-2xl p-4">About Me</h2>
             <p class="text-gray-400 px-4 text-lg p-6">I am a Front End Developer passionate about crafting beautiful, user-friendly interface. With expertise in HTML,CSS, Tailwind CSS, Javascript.
                 I build responsive interactive web applications that exceed expectations. Let's Create something amazing together!. </p>
@@ -57,18 +85,19 @@
     </section>
 
 <!--My Services-->
-    <section class="bg-center md:bg-cover  " style="background-image: url(./images/MacBook\ Air\ -\ 76.png);">
-        <h2 class="text-2xl font-bold text-gray-950 text-center p-5"> My <span class="text-amber-600">Services</span></h2>
-        <div class="py-5 mx-9 space-y-10 justify-center lg:flex flex-row space-x-8   "> 
-            <img class="max-w-full lg:w-64" src="./images/Group 641.png" alt="">
-            <img class="max-w-full  lg:w-64 " src="./images/Group 642.png" alt="">
-            <img class=" max-w-full  lg:w-64" src="./images/Group 643.png" alt="">
+    <section class="bg-center md:bg-cover  " style="background-image: url(./images/MacBook\ Air\ -\ 76.png);" id="Services">
+        <h2 class="opacity-0 translate-y-2 transition duration-500 ease-out animate-me text-2xl font-bold text-gray-950 text-center p-5"> My <span class="text-amber-600">Services</span></h2>
+        <div class="py-5 mx-4 space-y-10 justify-center  md:flex flex-row  space-x-3"> 
+            <img class=" lg:w-64 transition duration-300 transform hover:scale-75" src="./images/Group 641.png" alt="">
+            <img class="  lg:w-64 transition duration-300 transform hover:scale-75" src="./images/Group 642.png" alt="">
+            <img class="   lg:w-64 transition duration-300 transform hover:scale-75" src="./images/Group 643.png" alt="">
         </div>
     </section>
  
     <!--My Work Experience-->
-    <section class="bg-black" >
-        <div class="container mx-auto px-4 py-8"> 
+    <section class=" bg-black " id="Experience" >
+       
+        <div class=" opacity-0 translate-y-2 transition duration-500 ease-out animate-me container mx-auto px-4 py-8"> 
               <h2 class="text-2xl font-bold text-gray-100 text-center p-5"> My <span class="text-orange-400">Work Experience</span></h2>
               <div class="flex flex-row justify-center lg:ml-14">
               <div class="m-5 p-7 space-y-36 lg:space-y-20  ">
@@ -125,8 +154,9 @@
               </div>
         </div>
 
-        <div class="lg:flex flex-row-reverse px-14" style="background-image: url(./images/Component\ 33.png);">
-            <div class="">
+        
+        <div class="lg:flex flex-row-reverse px-14" style="background-image: url(./images/Component\ 33.png);" id="Resume">
+            <div class="opacity-0 translate-y-2 transition duration-500 ease-out animate-me">
             <div class=" p-4 text-2xl font-semibold text-gray-300">Why <span class="text-orange-600">Hire Me</span> ?</div>
             <p class="p-5 text-gray-400">I bring a mix of creativity, clarity, and execution. I dont just design, i solve Problems.I am adaptable, collaborative and committed to creating
                 digital experiences that feel good and function better.
@@ -135,53 +165,65 @@
             <div class="p-5 lg:p-1"><span class=" text-gray-300 font-semibold text-2xl">10+</span>
                 <p class=" text-gray-400 text-2xl font-medium">Projects Completed</p></div>
                 <div class=" border-b-2 border-gray-600 pb-2 lg:hidden" ></div>
-                 <button class="mt-6 w-full h-8 text-lg rounded-3xl px-5  text-white bg-orange-500   hover:bg-orange-950 text-white font rounded-full shadow-lg cursor-pointer transition duration-300 ease-in-out lg:w-32 text-base -mt-1 mb-5">Hire Me <i class="fa fa-envelope fill-slate-300"></i></button>
+                 <button class="mt-6 w-full h-8 text-lg rounded-3xl px-5  text-white bg-orange-500   hover:bg-orange-950 text-white font rounded-full shadow-lg cursor-pointer transition duration-300 ease-in-out lg:text-base -mt-1 mb-5">Hire Me <i class="fa fa-envelope fill-slate-300"></i></button>
             
 </div>
-            <div class=" px-5 mb-3 "> <img src="./images/Group 639.png " class="mx-auto  w-full  lg:w-64  "></div>
+            <div class=" opacity-0  transition duration-500 ease-out animate-me px-5 pb-2 "> <img src="./images/Group 639.png " class="mx-auto  w-full  lg:w-64  "></div>
         </div>
 
-        <div class="bg-black">
+        <div class="bg-gray-100" id="Projects">
+
+             <div class="flex gap-x-20 md:gap-x-60 "> 
+            <div class="font-sans  text-3xl  text-black px-3 mb-3 md:m-4  ">My Few <span class="text-orange-400 font-bold">Designs</span></div> 
+            <button type="button" class="text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-300 font-medium rounded-lg text-lg  px-3 py-2 text-center me-6 mb-2 mt-2 md:hidden"> See <i class="fa-solid fa-arrow-down font-bold text-lg animate-bounce"></i></button>
+        </div>
             <!-- component -->
 <!-- This is an example component -->
-<div class="max-w-2xl mx-auto">
+<div class="opacity-0 translate-y-2 transition duration-500 ease-out animate-me max-w-2xl mx-auto mb-4 md:max-w-64">
 
-	<div id="default-carousel" class="relative" data-carousel="static">
+	<div id="default-carousel" class="relative" data-carousel="slide">
         <!-- Carousel wrapper -->
-        <div class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:h-96">
+        <div class="overflow-hidden relative h-56 rounded-lg sm:h-80 xl:h-80 2xl:max-w-full md:overflow-visible">
             <!-- Item 1 -->
-            <div class=" duration-700 ease-in-out" data-carousel-item>
+            <div class=" duration-900 ease-in-out" data-carousel-item>
                 <span class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800">First Slide</span>
-                <img src="./images/Component 32.png" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                <img src="./images/WhatsApp Image 2025-10-05 at 20.31.42_ff808dc2.jpg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2 " alt="...">
             </div>
-            <!-- Item 2 -->
-            <div class="duration-700 ease-in-out" data-carousel-item>
-                <img src="https://flowbite.com/docs/images/carousel/carousel-2.svg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+            
+            <!-- Item 2-->
+            <div class="duration-900 ease-in-out" data-carousel-item>
+                <img src="./images/WhatsApp Image 2025-10-05 at 20.36.11_4be443fc.jpg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
             </div>
-            <!-- Item 3 -->
-            <div class="duration-700 ease-in-out" data-carousel-item>
-                <img src="https://flowbite.com/docs/images/carousel/carousel-3.svg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+            <!--item 3-->
+            <div class="duration-900 ease-in-out" data-carousel-item>
+                <img src="./images/95f08350-c081-4a89-987f-213bbbb675cd.png" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
             </div>
-            <!--item 4-->
-            <div class="duration-700 ease-in-out" data-carousel-item>
-                <img src="https://flowbite.com/docs/images/carousel/carousel-3.svg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+
+             <!--item 5-->
+            <div class="duration-900 ease-in-out" data-carousel-item>
+                <img src="./images/Screenshot 2025-10-06 112727.png" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+            </div>
+
+             <!--item 5-->
+            <div class="duration-900 ease-in-out" data-carousel-item>
+                <img src="./images/Screenshot 2025-10-06 113728.png" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
             </div>
 
         </div>
         <!-- Slider indicators -->
-        <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
+        <div class="hidden flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
             <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0"></button>
             <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
             <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
         </div>
         <!-- Slider controls -->
-        <button type="button" class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+        <button type="button" class="hidden flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
             <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
                 <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
                 <span class="hidden">Previous</span>
             </span>
         </button>
-        <button type="button" class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-next>
+        <button type="button" class=" hidden flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-next>
             <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
                 <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                 <span class="hidden">Next</span>
@@ -194,5 +236,96 @@
 </div>
         </div>
        
+       <section class="bg-cover animate-appear" style="background-image: url(./images/Property\ 1=MacBook\ Air\ -\ 80\,\ Property\ 2=default\(1\).png);">
+       <div class="opacity-0 translate-y-2 transition duration-500 ease-out animate-me px-8 ">
+       <div class="text-center items-center  text-gray-300 text-2xl font-serif "> Testimonials That Speak To <span class="text-orange-600 text-2xl font-semibold">My Results</span></div>
+       <div class="space-y-8 py-6 md:flex space-x-4  ">
+       <div class="container bg-neutral-800 rounded-3xl shadow-xl p-6 md:shadow-md cursor-pointer transition duration-300 hover:shadow-emerald-200 hover:-translate-y-4" >
+        <div class="flex items-center"><img class="h-12 w-12 rounded-full" src="./images/customer-4.jpg" alt=""><div class="ml-4 text-gray-300 font-medium text-2xl">David. E <br> <p class="text-xl text-gray-500">Start up CEO</p></div>
+    </div>
+    <div class="container flex mt-2 gap-x-1 ">
+        <i class="fa fa-star text-yellow-300"></i>
+        <i class="fa fa-star text-yellow-300"></i>
+        <i class="fa fa-star text-yellow-300"></i>
+        <i class="fa fa-star text-yellow-300"></i>
+        <i class="fa fa-star text-gray-400"></i>
+    </div>
+    <div class="text-gray-400 mt-4">Working with GALLANT was seamless. He took our vague ideas and turned them into a 
+        beautiful, functional product. His attention to details made a real difference
+    </div>
+       </div>
+
+       <div class="container bg-neutral-800 rounded-3xl shadow-xl p-6 lg:cursor-pointer transition duration-300 hover:shadow-emerald-200 hover:-translate-y-4">
+        <div class="flex items-center"><img class="h-12 w-12 rounded-full" src="./images/customer-2.jpg" alt=""><div class="ml-4 text-gray-300 font-medium text-2xl">Afolabi Muiz (YUNGLEOH)<br> <p class="text-xl text-gray-500">WEB3 Developer</p></div>
+    </div>
+    <div class="container flex mt-2 gap-x-1 ">
+        <i class="fa fa-star text-yellow-300"></i>
+        <i class="fa fa-star text-yellow-300"></i>
+        <i class="fa fa-star text-yellow-300"></i>
+        <i class="fa fa-star text-yellow-300"></i>
+        <i class="fa fa-star text-gray-400"></i>
+    </div>
+    <div class="text-gray-400 mt-4">GALLANT is a talented Front-End Dev. who consistently delivers outstanding results.He is professional, communicative and a joy to work with.
+    </div> 
+       </div>
+
+       <div class="container bg-neutral-800 rounded-3xl shadow-xl p-6 md:shadow-md cursor-pointer transition duration-300 hover:shadow-emerald-200 hover:-translate-y-4">
+        <div class="flex items-center"><img class="h-12 w-12 rounded-full" src="./images/customer-6.jpg" alt=""><div class="ml-4 text-gray-300 font-medium text-2xl">Okegbemi Dara <br> <p class="text-xl text-gray-500">Start up CEO</p></div>
+    </div>
+    <div class="container flex mt-2 gap-x-1 ">
+        <i class="fa fa-star text-yellow-300"></i>
+        <i class="fa fa-star text-yellow-300"></i>
+        <i class="fa fa-star text-yellow-300"></i>
+        <i class="fa fa-star text-yellow-300"></i>
+        <i class="fa fa-star text-gray-400"></i>
+    </div>
+    <div class="text-gray-400 mt-4">I was blown away by GALLANT technical expertise and creative problem-solving skills. They built a custom website that only looks great but also performs flawlessly. 
+    </div>
+       </div>
+       </div>
+       </div>
+       </section>
+
+       <footer>
+        <div>
+            <h2 class=" text-gray-300 text-xl font-semibold font-serif p-2 text-center justify-center">Have an Awesome Project Idea? <span class="text-orange-500 text-xl">Let`s Discuss</span></h2>
+        </div>
+        <div class="flex items-center justify-center bg-black">
+            <div class="flex items-center  rounded-full bg-transparent border border-gray-700">
+                <div class="p-2 rounded-full bg-orange-300 text-white"><i class="fa fa-envelope h-6 w-6 "></i></div>
+                <input type="email" placeholder="Enter Email Address" class="ml-2 bg-transparent text-white  outline-none focus:outline-none">
+                <button class="px-6 py-3 ml-4 text-white font-bold rounded-full bg-orange-500 hover:bg-orange-700 focus:outline-none">Send</button>
+            </div>
+        </div>
+        <div class="flex items-center justify-center mt-3">
+            <h2 class="text-gray-200 font-mono  ">Socials</h2>
+            <div class="flex list-none space-x-2 px-4">
+            <li><img class="h-6" src="./images/ig-instagram-icon.svg"></li>
+            <li><img class="h-6" src="./images/linkedin.svg" alt=""></li>
+            <li><img class="h-6" src="./images/github.svg" alt=""></li>
+            <li><img class="h-6" src="./images/whatsapp-color-icon.svg" ></li>
+            <li></li>
+            </div>
+        </div>
+
+        <div class="flex items-center justify-center space-x-2 my-2"> 
+            <div class="text-gray-200 font-mono text-xl">GALLANT</div>
+            <img class="w-8" src="./images/Frame 677.png" >
+        </div>
+
+        <div class="flex items-center justify-center space-x-3 list-none">
+        <li class="text-lg text-gray-500 hover:text-gray-300 "> <a href="#Home"> Home</a></li>
+            <li class="text-lg text-gray-500 hover:text-gray-300"><a href="#Services">Services</a></li>
+            <li class="text-lg text-gray-500 hover:text-gray-300"><a href="#Experience">Experience</a></li>
+            <li class="text-lg text-gray-500 hover:text-gray-300"><a href="#Resume">Resume</a></li>
+            <li class="text-lg text-gray-500 hover:text-gray-300"><a href="#Projects">Projects</a></li>
+        </div>
+        <div class="border-b-2 border-gray-400 pt-2"></div>
+
+        <div class="flex items-center justify-center text-gray-300 text-xs py-2">&copy 2025  <span class="text-orange-500 px-1">GALLANT</span>, All rights reserved. Inc</div>
+       </footer> 
+       
 </body>
+<script src="script.js"></script>
+
 </html>
