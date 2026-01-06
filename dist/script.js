@@ -3,6 +3,7 @@ const menu = document.getElementById('menu');
 const menuIcon = document.getElementById('menu-icon');
 const closeIcon = document.getElementById('close-icon');
 const image = document.getElementById('image');
+const links = document.querySelectorAll('nav-menu')
 const menuItems = document.querySelectorAll('#menu li');
 
 
@@ -25,7 +26,8 @@ menuButton.addEventListener('click', () => {
     menu.classList.toggle('hidden');
     menuIcon.classList.toggle('hidden');
     closeIcon.classList.toggle('hidden');
-    image.classList.toggle('translate-y-10');
+    image.classList.toggle('translate-y-48');
+    
 });
 
 document.addEventListener('click', (e) => {
@@ -42,4 +44,13 @@ menuItems.forEach((item) => {
         closeIcon.classList.add('hidden');
         image.classList.remove('tramslate-y-10');
     })
+});
+
+links.forEach(link =>{
+    link.addEventListener('click', function(event){
+        event.preventDefault();
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        targetElement.scrollIntoView({behavior:'smooth'});
+    });
 });
