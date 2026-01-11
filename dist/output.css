@@ -1313,10 +1313,6 @@ video {
   fill: #cbd5e1;
 }
 
-.fill-slate-800 {
-  fill: #1e293b;
-}
-
 .p-1 {
   padding: 0.25rem;
 }
@@ -1913,10 +1909,6 @@ video {
 }
 
 @media (min-width: 640px) {
-  .sm\:hidden {
-    display: none;
-  }
-
   .sm\:pl-5 {
     padding-left: 1.25rem;
   }
@@ -1953,10 +1945,6 @@ video {
 
   .md\:hidden {
     display: none;
-  }
-
-  .md\:w-48 {
-    width: 12rem;
   }
 
   .md\:w-56 {
